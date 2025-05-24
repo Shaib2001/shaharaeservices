@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shahara eServices</title>
+<style>
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+  }
+  header {
+    background: #004aad;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  nav {
+    background: #023e8a;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px 0;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover,
+  nav a.active {
+    background-color: #0077ff;
+  }
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 0.1);
+    padding: 30px 40px;
+    border-radius: 8px;
+  }
+  section {
+    display: none;
+  }
+  section.active {
+    display: block;
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  h2 {
+    color: #023e8a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077ff;
+    padding-bottom: 8px;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+  }
+  p {
+    line-height: 1.6;
+  }
+
+  footer {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    margin-top: 50px;
+  }
+
+  /* Services accordion */
+  .service-item {
+    margin-bottom: 15px;
+  }
+
+  .service-title {
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .service-title:hover {
+    background-color: #005ec4;
+  }
+
+  .service-details {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  .service-details li::before {
+    content: "✔ ";
+    color: green;
+    margin-right: 5px;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+    main {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>Shahara eServices</header>
+<nav>
+  <a href="#" data-target="home" class="active">Home</a>
+  <a href="#" data-target="about">About</a>
+  <a href="#" data-target="services">Services</a>
+  <a href="#" data-target="contact">Contact Us</a>
+  <a href="#" data-target="faqs">FAQs</a>
+</nav>
+
+<main>
+  <section id="home" class="active">
+    <h2>Welcome to Shahara eServices</h2>
+    <p>Providing reliable online solutions for all your needs. From Forex and Cryptocurrency trading, TIN number registration, job applications, eSIM cards , Air and Water transport ticket booking — we got you covered! SHAHARA eSERVICES For r better And Trusted services</p>
+    <p>Explore our services through the navigation menu above.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Shahara eServices is dedicated to offering fast, secure and professional digitala and online services. We aim to make your daily tasks easier through digital solutions that save you time and effort. SHAHARA eSERVICES For Better And Trusted Services</p>
+    <p>Our team is committed to customer satisfaction and quality service delivery.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-item">
+      <button class="service-title">Online Application Services</button>
+      <ul class="service-details">
+        <li>Easy access to online forms</li>
+        <li>Guidance through the application process</li>
+        <li>Fast submission and feedback</li>
+      </ul>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title">Forex and Cryptocurrency Trading Support</button>
+      <ul class="service-details">
+        <li>Real-time trading guidance</li>
+        <li>Access to market analysis tools</li>
+        <li>Training for beginners</li>
+      </ul>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title">Financial Marketing Solutions</button>
+      <ul class="service-details">
+        <li>Promotion of financial services</li>
+        <li>Targeted digital ads</li>
+        <li>Client engagement strategies</li>
+      </ul>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title">Affiliation Marketing Programs</button>
+      <ul class="service-details">
+        <li>Join trusted affiliate programs</li>
+        <li>Earn commission per referral</li>
+        <li>Guidance to boost earnings</li>
+      </ul>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title">Air and Water Transport Ticket Booking</button>
+      <ul class="service-details">
+        <li>Fast and secure ticket booking</li>
+        <li>Options for local and international routes</li>
+        <li>Customer support during booking</li>
+      </ul>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title">Digital Marketing Services</button>
+      <ul class="service-details">
+        <li>Social media marketing</li>
+        <li>Content creation</li>
+        <li>Campaign management</li>
+      </ul>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title">TIN Number Registration</button>
+      <ul class="service-details">
+        <li>Preparation of required documents</li>
+        <li>Online submission support</li>
+        <li>Follow-up with authorities</li>
+      </ul>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title">Job Application Assistance</button>
+      <ul class="service-details">
+        <li>Resume writing and editing</li>
+        <li>Online job search help</li>
+        <li>Interview preparation tips</li>
+      </ul>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title">eSIM Card Activation</button>
+      <ul class="service-details">
+        <li>Step-by-step activation help</li>
+        <li>Support for multiple networks</li>
+        <li>Troubleshooting assistance</li>
+      </ul>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title">And all related to digital issue</button>
+      <ul class="service-details">
+        <li>Consultation for digital tools</li>
+        <li>Fast troubleshooting</li>
+        <li>Custom solutions</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: shaibhamad8@gmail.com</p>
+    <p>Phone: +255 712 624 474</p>
+    <p>Address: P.O Box 308, Zanzibar, Tanzania</p>
+  </section>
+
+  <section id="faqs">
+    <h2>FAQs</h2>
+    <p><strong>Q:</strong> How do I apply for a TIN number?</p>
+    <p><strong>A:</strong> You can apply through our online application service under Services tab.</p>
+    <p><strong>Q:</strong> Do you provide Forex trading training?</p>
+    <p><strong>A:</strong> Yes, we offer support and guidance for Forex and cryptocurrency trading.</p>
+    <p><strong>Q:</strong> How do I contact customer support?</p>
+    <p><strong>A:</strong> Use the contact details provided on the Contact Us page or email us directly.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Shahara eServices. All rights reserved.
+</footer>
+
+<script>
+  // Navigation switch
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('main section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      navLinks.forEach(l => l.classList.remove('active'));
+      sections.forEach(section => section.classList.remove('active'));
+      link.classList.add('active');
+      const target = link.getAttribute('data-target');
+      document.getElementById(target).classList.add('active');
+    });
+  });
+
+  // Service toggle
+  const serviceButtons = document.querySelectorAll('.service-title');
+
+  serviceButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const details = button.nextElementSibling;
+      details.style.display = details.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+</body>
+</html>
